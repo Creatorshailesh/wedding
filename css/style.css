@@ -874,6 +874,7 @@ form label {
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
     font-size: 30px;
+    padding-top: 45%;
   }
 }
 #fh5co-header .display-tc h2,
@@ -950,9 +951,18 @@ form label {
 
 .simply-countdown {
   /* The countdown */
-  margin-bottom: 2em;
+  margin-bottom: 0em;
+  margin-top: 2em;
 }
 
+@media screen and (max-width: 768px) {
+
+  .simply-countdown {
+    /* The countdown */
+    margin-bottom: 0em;
+    margin-top: 25%;
+  }
+}
 .simply-countdown > .simply-section {
   /* coutndown blocks */
   display: inline-block;
@@ -1363,10 +1373,25 @@ height: 750px;
 
 
   width: 100%;
-  background: url("../images/savedate.jpeg") top center;
+  background: url("../images/savedate.jpeg") ;
  
 }
-}
+@media (min-width:200px) and (max-width:768px) 
+{
+  #fh5co-started 
+  {
+    
+    background-repeat: no-repeat;
+    background-image: url("../images/savedate.jpeg");
+      background-size: cover;
+ 
+  width: 100%;
+      height:250px;
+   
+      opacity: 1;
+      visibility: inherit;
+      z-index: 0;
+  }}
 #fh5co-started .fh5co-heading h2 {
   color: #fff;
 }
