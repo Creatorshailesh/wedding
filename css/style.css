@@ -1366,7 +1366,7 @@ width: 100%;
 }
 @media (min-width:200px) and (max-width:768px) 
 {
-  .save
+  .savedate .save
   {
     
     background-repeat: no-repeat;
